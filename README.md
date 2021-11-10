@@ -69,6 +69,10 @@ Follow this to run tests --
     tar -xzvf pa2_arg_test.tar.gz
     this will extract the tar, and create a new directory "pa2_arg_test/" with three files: test_arg_passing.sh, arg_test.py, gold.txt
 3. Run the script by executing (from the pintos root directory, NOT src/ or src/userprog)
+
+This will run a sample input and check your implementation. Note that the tester injects a hex_dump in your code, so:
+1. Do not remove existing comments from pintos code in process.c
+2. Comment out any other hex_dump or printf calls you have in your code.
     python pa2_arg_test/arg_test.py
 * pintos --filesys-size=2 -p ../examples/echo -- -f -q run 'echo x'
 * python pa2_arg_test/arg_test.py  -- from outside the /src directory, i.e /pintos root directory
