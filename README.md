@@ -63,8 +63,16 @@ Changed files: thread.c, timer.c, thread.h
 ###### Phase 1: Stack Setup - Argument Parsing (pa2.tar.gz)
 
 Tests:
+Follow this to run tests -- 
+1. Download the pa2_arg_test.tar.gz (attached)
+2. Move it to your pintos root directory (NOT src/) inside the VM, then navigate to the pintos directory and run:
+    tar -xzvf pa2_arg_test.tar.gz
+    this will extract the tar, and create a new directory "pa2_arg_test/" with three files: test_arg_passing.sh, arg_test.py, gold.txt
+3. Run the script by executing (from the pintos root directory, NOT src/ or src/userprog)
+    python pa2_arg_test/arg_test.py
 * pintos --filesys-size=2 -p ../examples/echo -- -f -q run 'echo x'
 * python pa2_arg_test/arg_test.py  -- from outside the /src directory, i.e /pintos root directory
+
 
 Changed files: process.c
 
