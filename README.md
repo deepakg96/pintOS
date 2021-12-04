@@ -103,3 +103,90 @@ Tests:
 Changed files: syscall.c, syscall.h, exception.c
 
 
+###### Phase 3: Rest of the System Calls & File Systems
+
+Tests:
+* tests/filesys/base/syn-write
+* tests/userprog/args-none
+* tests/userprog/args-single
+* tests/userprog/args-multiple
+* tests/userprog/args-many
+* tests/userprog/args-dbl-space
+* tests/userprog/sc-bad-sp
+* tests/userprog/sc-bad-arg
+* tests/userprog/sc-boundary
+* tests/userprog/sc-boundary-2
+* tests/userprog/sc-boundary-3
+* tests/userprog/halt
+* tests/userprog/exit
+* tests/userprog/create-normal
+* tests/userprog/create-empty
+* tests/userprog/create-null
+* tests/userprog/create-bad-ptr
+* tests/userprog/create-long
+* tests/userprog/create-exists
+* tests/userprog/create-bound
+* tests/userprog/open-normal
+* tests/userprog/open-missing
+* tests/userprog/open-boundary
+* tests/userprog/open-empty
+* tests/userprog/open-null
+* tests/userprog/open-bad-ptr
+* tests/userprog/open-twice
+* tests/userprog/close-normal
+* tests/userprog/close-twice
+* tests/userprog/close-stdin
+* tests/userprog/close-stdout
+* tests/userprog/close-bad-fd
+* tests/userprog/read-normal
+* tests/userprog/read-bad-ptr
+* tests/userprog/read-boundary
+* tests/userprog/read-zero
+* tests/userprog/read-stdout
+* tests/userprog/read-bad-fd
+* tests/userprog/write-normal
+* tests/userprog/write-bad-ptr
+* tests/userprog/write-boundary
+* tests/userprog/write-zero
+* tests/userprog/write-stdin
+* tests/userprog/write-bad-fd
+* tests/userprog/exec-once
+* tests/userprog/exec-arg
+* tests/userprog/exec-bound
+* tests/userprog/exec-bound-2
+* tests/userprog/exec-bound-3
+* tests/userprog/exec-multiple
+* tests/userprog/exec-missing
+* tests/userprog/exec-bad-ptr
+* tests/userprog/wait-simple
+* tests/userprog/wait-twice
+* tests/userprog/wait-killed
+* tests/userprog/wait-bad-pid
+* tests/userprog/multi-recurse
+* tests/userprog/multi-child-fd
+* tests/userprog/rox-simple
+* tests/userprog/rox-child
+* tests/userprog/rox-multichild
+* tests/userprog/bad-read
+* tests/userprog/bad-write
+* tests/userprog/bad-read2
+* tests/userprog/bad-write2
+* tests/userprog/bad-jump
+* tests/userprog/bad-jump2
+* tests/userprog/no-vm/multi-oom
+* tests/filesys/base/lg-create
+* tests/filesys/base/lg-full
+* tests/filesys/base/lg-random
+* tests/filesys/base/lg-seq-block
+* tests/filesys/base/lg-seq-random
+* tests/filesys/base/sm-create
+* tests/filesys/base/sm-full
+* tests/filesys/base/sm-random
+* tests/filesys/base/sm-seq-block
+* tests/filesys/base/sm-seq-random
+* tests/filesys/base/syn-read
+* tests/filesys/base/syn-remove
+* tests/filesys/base/syn-write
+All 80 tests passed.
+
+Changed files: syscall.h, syscall.c, process.c, threads.c, threads.h
